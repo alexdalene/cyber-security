@@ -5,9 +5,9 @@ export default function Categories() {
     return (
         <section className={styles.container}>
             <h2 className={styles.title}>Learn about</h2>
-            <Link href='' className={styles.button}>Phishing</Link>
-            <Link href='' className={styles.button}>Privacy Threat</Link>
-            <Link href='' className={styles.button}>Internet Scam</Link>
+            <Link href='/categories/phishing' className={styles.button}>Phishing</Link>
+            <Link href='/categories/privacy-threat' className={styles.button}>Privacy Threat</Link>
+            <Link href='/categories/internet-scams' className={styles.button}>Internet Scam</Link>
             <Link href='' className={styles.button}>Malware</Link>
         </section>
     )

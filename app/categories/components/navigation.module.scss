@@ -1,0 +1,25 @@
+@use '../../main.scss' as a;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.6rem;
+
+    .link {
+        font-family: a.$text-font-manrope;
+        font-size: a.$text-size-small;
+        color: a.$text-color-primary;
+        display: flex;
+        gap: 1rem;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:first-child::before {
+            content: '<';
+        }
+
+        &:last-child::after {
+            content: '>';
+        }
+    }
+}

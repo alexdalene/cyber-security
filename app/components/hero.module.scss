@@ -5,6 +5,7 @@
     height: clamp(30rem, 35rem, 50rem);
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .display {
         font-size: a.$text-size-display;

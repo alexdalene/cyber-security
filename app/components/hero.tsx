@@ -1,9 +1,13 @@
 import styles from './hero.module.scss'
 
-export default function Hero() {
+interface Hero {
+    title: string
+}
+
+export default function Hero({title}: Hero) {
     return (
         <header className={styles.header}>
-            <h1 className={styles.display}>Welcome to our website</h1>
+            <h1 className={styles.display}>{title ? title: 'Default title'}</h1>
         </header>
     )
 }

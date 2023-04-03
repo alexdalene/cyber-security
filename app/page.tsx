@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Manrope } from 'next/font/google'
 import { Righteous } from 'next/font/google'
 import styles from './page.module.scss'
@@ -24,7 +23,9 @@ const righteous = Righteous({
 export default function Home() {
   return (
     <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
-      <Hero />
+      <Hero 
+      title='Welcome to our website'
+      />
       <ToDo />
       <Introduction />
       <Divider />
