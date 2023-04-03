@@ -15,7 +15,7 @@ export default function Category() {
                 </details>
                 <details>
                     <summary>Baiting scams</summary>
-                    <p>Baiting scams use physical or digital bait to obtain confidential information by sparking victims' curiosity. Be cautious of unexpected freebies or downloads, and avoid inserting unfamiliar devices into your computer.</p>
+                    <p>Baiting scams use physical or digital bait to obtain confidential information by sparking victims&apos; curiosity. Be cautious of unexpected freebies or downloads, and avoid inserting unfamiliar devices into your computer.</p>
                 </details>
                 <details>
                     <summary>Investment scams</summary>
