@@ -2,7 +2,7 @@ import styles from "./quiz.module.scss";
 
 export default function Quiz() {
   const handleEventCorrect = (e) => {
-    console.log(typeof e);
+    console.log(e);
     e.preventDefault();
     e.currentTarget.classList.add(`${styles.correct}`);
   };
@@ -15,7 +15,7 @@ export default function Quiz() {
     <section className={styles.container}>
       <h2 className={styles.title}>Quiz</h2>
       <p className={styles.question}>
-        What is another type of malware that that exists?
+        In their Terms of Service, Facebook acquires a license to use what?
       </p>
       <form action="" className={styles.answers}>
         <button
@@ -23,21 +23,21 @@ export default function Quiz() {
           onClick={handleEventWrong}
           className={styles.button}
         >
-          Oracle
-        </button>
-        <button
-          type="submit"
-          onClick={handleEventWrong}
-          className={styles.button}
-        >
-          Turtle
+          Your date of birth
         </button>
         <button
           type="submit"
           onClick={handleEventCorrect}
           className={styles.button}
         >
-          Trojan
+          Your picture
+        </button>
+        <button
+          type="submit"
+          onClick={handleEventWrong}
+          className={styles.button}
+        >
+          Your relationship status
         </button>
       </form>
     </section>
