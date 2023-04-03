@@ -1,91 +1,42 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import { Manrope } from 'next/font/google'
+import { Righteous } from 'next/font/google'
+import styles from './page.module.scss'
+import Hero from './components/hero'
+import ToDo from './components/to-do'
+import Introduction from './components/introduction'
+import Divider from './components/divider'
+import Section from './components/section'
+import Categories from './components/categories'
+import Footer from './components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const manrope = Manrope({
+  variable: '--manrope-font',
+  subsets: ['latin'],
+})
+
+const righteous = Righteous({
+  variable: '--righteous-font',
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
+      <Hero />
+      <ToDo />
+      <Introduction />
+      <Divider />
+      <Section 
+      title='Who we are'
+      para1='We are a group of five students from Noroff University College, pursuing a bachelor’s degree in cyber security. We are all currently in the first year of the bachelor.'
+      para2='As technology evolves and the number of internet users rises, the occurrence of cyber threats and crime increases. Our task for this project was to create an informative artifact, and we decided to establish a website.'
+      para3='The purpose of this website is to raise awareness and educate the public on how to protect themselves against cyber threats.'
+      />
+      <Divider />
+      <Categories />
+      <Footer />
     </main>
   )
 }

@@ -1,0 +1,25 @@
+@use '../main.scss' as a;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.6rem;
+    gap: 2.4rem;
+    color: a.$text-color-primary;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+
+        .title {
+            font-family: a.$text-font-righteous;
+            font-size: a.$text-size-title;
+        }
+    }
+
+    .bottom {
+        font-family: a.$text-font-manrope;
+        font-size: a.$text-size-small;
+    }
+}

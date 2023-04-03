@@ -1,0 +1,15 @@
+@use '../main.scss' as a;
+
+.header {
+    background-color: a.$primary;
+    height: clamp(30rem, 35rem, 50rem);
+    display: flex;
+    align-items: center;
+
+    .display {
+        font-size: a.$text-size-display;
+        color: a.$text-color-neutral;
+        font-family: a.$text-font-righteous;
+        text-align: center;
+    }
+}

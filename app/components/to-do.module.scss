@@ -1,0 +1,38 @@
+@use '../main.scss' as a;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.6rem;
+    gap: 2.4rem;
+
+    .title {
+        font-family: a.$text-font-manrope;
+        font-size: a.$text-size-medium;
+        color: a.$text-color-primary;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .button {
+            width: 17rem;
+            height: 17rem;
+            background-color: a.$accent;
+            display: grid;
+            place-content: center;
+            font-family: a.$text-font-manrope;
+            font-size: a.$text-size-medium;
+            color: a.$text-color-primary;
+            text-decoration: none;
+            text-align: center;
+            padding: 1.6rem;
+            border-radius: 0.5rem;
+            box-shadow: a.$shadow-light;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use '../main.scss' as a;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 0 1.6rem;
+    color: a.$text-color-primary;
+
+    .title {
+        font-family: a.$text-font-righteous;
+        font-size: a.$text-size-title;
+    }
+
+    .para {
+        font-family: a.$text-font-manrope;
+        font-size: a.$text-size-small;
+    }
+}

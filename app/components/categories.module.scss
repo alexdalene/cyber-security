@@ -1,0 +1,39 @@
+@use '../main.scss' as a;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: a.$text-color-primary;
+    gap: 2.4rem;
+    padding: 0 1.6rem;
+
+    .title {
+        font-family: a.$text-font-righteous;
+        font-size: a.$text-size-title;
+    }
+
+    .button {
+        text-decoration: none;
+        color: a.$text-color-primary;
+        font-family: a.$text-font-manrope;
+        font-size: a.$text-size-small;
+        width: 100%;
+        background-color: a.$accent;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        box-shadow: a.$shadow-light;
+        gap: 1rem;
+        font-weight: 700;
+
+        &::after {
+            content: ">";
+            font-weight: 700;
+            font-size: 3rem;
+        }
+    }
+}

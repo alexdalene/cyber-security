@@ -1,0 +1,44 @@
+@use '../main.scss' as a;
+
+
+.footer {
+    background-color: a.$primary;
+    color: a.$text-color-neutral;
+    font-family: a.$text-font-manrope;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.4rem 1.6rem;
+    gap: 2.4rem;
+
+    .logo {
+        width: 12rem;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .title {
+            font-size: a.$text-size-small;
+        }
+    
+        .link {
+            font-size: 1.6rem;
+            color: a.$text-color-neutral;
+        }
+
+        .pdf {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+    }
+
+    .copyright {
+        font-size: 1.2rem;
+    }
+}
