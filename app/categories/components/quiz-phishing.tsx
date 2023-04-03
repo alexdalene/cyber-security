@@ -2,7 +2,6 @@ import styles from './quiz.module.scss'
 
 export default function Quiz() {
     const handleEventCorrect = e => {
-        console.log(e)
         e.preventDefault()
         e.currentTarget.classList.add(`${styles.correct}`)
     }

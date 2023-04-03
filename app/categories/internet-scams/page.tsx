@@ -38,7 +38,8 @@ export default function Home() {
       <Divider />
       <Quiz />
       <Navigation 
-      url=''
+      url='/categories/malware'
+      title=''
       />
       <Footer />
     </main>

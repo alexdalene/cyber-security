@@ -8,7 +8,7 @@ export default function Categories() {
             <Link href='/categories/phishing' className={styles.button}>Phishing</Link>
             <Link href='/categories/privacy-threat' className={styles.button}>Privacy Threat</Link>
             <Link href='/categories/internet-scams' className={styles.button}>Internet Scam</Link>
-            <Link href='' className={styles.button}>Malware</Link>
+            <Link href='/categories/malware' className={styles.button}>Malware</Link>
         </section>
     )
 }

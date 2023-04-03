@@ -39,6 +39,7 @@ export default function Home() {
       <Quiz />
       <Navigation 
       url='/categories/privacy-threat'
+      title=''
       />
       <Footer />
     </main>
