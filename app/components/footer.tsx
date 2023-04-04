@@ -13,12 +13,12 @@ export default function Footer() {
                 </div>
                 <div className={styles.container}>
                     <h4 className={styles.title}>Noroff</h4>
-                    <Link href='' className={styles.link}>Read about our school</Link>
-                    <Link href='' className={styles.link}>Cyber Security</Link>
+                    <Link href='https://www.noroff.no/index.php' target='_blank' className={styles.link}>Read about our school</Link>
+                    <Link href='https://www.noroff.no/studier/hoyskole/cyber-security' target='_blank' className={styles.link}>Cyber Security</Link>
                 </div>
                 <div className={styles.container}>
                     <h4 className={styles.title}>This website is made by</h4>
-                    <Link href='' className={styles.link}>Alex Dalene</Link>
+                    <Link href='https://tailwind-portfolio-woad.vercel.app/' target='_blank' className={styles.link}>Alex Dalene</Link>
                 </div>
             </section>
                 <p className={styles.copyright}>&copy; Noroff Kristiansand</p>
