@@ -7,14 +7,14 @@
     gap: 1rem;
 
     .innerCircle {
-        background-color: a.$primary;
+        background-color: a.$text-color-primary;
         width: 1.8rem;
         height: 1.8rem;
         border-radius: 9999px;
     }
     
     .outerCircle {
-        background-color: a.$primary;
+        background-color: a.$text-color-primary;
         width: 1.2rem;
         height: 1.2rem;
         border-radius: 9999px;

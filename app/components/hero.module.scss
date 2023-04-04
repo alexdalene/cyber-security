@@ -1,16 +1,22 @@
 @use '../main.scss' as a;
 
 .header {
-    background-color: a.$primary;
     height: clamp(30rem, 35rem, 50rem);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #3E7CB1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3E7CB1 40px ), repeating-linear-gradient( #D5896F55, #D5896F );
+    background-attachment: fixed;
 
     .display {
         font-size: a.$text-size-display;
         color: a.$text-color-neutral;
         font-family: a.$text-font-righteous;
         text-align: center;
+
+        @media (min-width: 1440px) {
+            font-size: 10.4rem;
+        }
     }
 }

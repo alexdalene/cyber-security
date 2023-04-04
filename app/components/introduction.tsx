@@ -5,7 +5,7 @@ export default function Introduction() {
         <section className={styles.container}>
             <div className={styles.top}>
                 <h2 className={styles.title}>Introductory Video</h2>
-                <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/inWWhr5tnEA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <iframe width="100%" height="220" src="https://www.youtube-nocookie.com/embed/inWWhr5tnEA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className={styles.video}></iframe>
             </div>
             <div className={styles.bottom}>
                 <p>This simple video will cover:</p>

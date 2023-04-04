@@ -1,3 +1,4 @@
+'use client'
 import { Manrope } from 'next/font/google'
 import { Righteous } from 'next/font/google'
 import styles from './page.module.scss'
@@ -24,7 +25,7 @@ export default function Home() {
   return (
     <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
       <Hero 
-      title='Welcome to our website'
+      title='WELCOME'
       />
       <ToDo />
       <Introduction />

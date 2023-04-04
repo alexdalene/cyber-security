@@ -7,6 +7,14 @@
     color: a.$text-color-primary;
     padding: 0 1.6rem;
 
+    @media (min-width: 768px) {
+        padding: 0 12rem;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 0 40rem;
+    }
+
     .title {
         font-family: a.$text-font-righteous;
         font-size: a.$text-size-title;
@@ -24,6 +32,11 @@
             font-family: a.$text-font-manrope;
             padding: 1.6rem;
             cursor: pointer;
+            transition: 200ms ease;
+
+            &:hover {
+                transform: translateY(-0.3rem);
+            }
 
             summary {
                 font-family: a.$text-font-manrope;

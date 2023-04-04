@@ -7,6 +7,14 @@
     padding: 0 1.6rem;
     gap: 2.4rem;
 
+    @media (min-width: 768px) {
+        padding: 0 12rem;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 0 40rem;
+    }
+
     .title {
         font-family: a.$text-font-manrope;
         font-size: a.$text-size-medium;
@@ -16,23 +24,35 @@
 
     .buttons {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.6rem;
         width: 100%;
 
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+
         .button {
-            width: 17rem;
-            height: 17rem;
-            background-color: a.$accent;
+            width: 100%;
+            height: 8rem;
+            background-color: a.$background;
             display: grid;
             place-content: center;
             font-family: a.$text-font-manrope;
             font-size: a.$text-size-medium;
+            font-weight: 700;
             color: a.$text-color-primary;
             text-decoration: none;
             text-align: center;
-            padding: 1.6rem;
-            border-radius: 0.5rem;
             box-shadow: a.$shadow-light;
+            border-radius: 0.5rem;
+            transition: 200ms ease;
+
+            &:hover {
+                transform: translateY(-0.3rem);
+                background-color: #f2f2f2;
+            }
         }
     }
 }

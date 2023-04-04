@@ -7,6 +7,14 @@
     color: a.$text-color-primary;
     padding: 0 1.6rem;
 
+    @media (min-width: 768px) {
+        padding: 0 12rem;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 0 40rem;
+    }
+
     .title {
         font-family: a.$text-font-righteous;
         font-size: a.$text-size-title;
@@ -29,15 +37,15 @@
 
         .wrong {
             -webkit-animation: shake-horizontal 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: shake-horizontal 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-            background-color: hsl(18, 12%, 55%);
-            color: #08202f;
+	          animation: shake-horizontal 0.3s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            background-color: hsl(0, 0%, 66%);
+            color: #cfcfcf;
         }
     }
 }
 
 .button {
-    background-color: a.$accent;
+    background-color: a.$background;
     font-size: a.$text-size-small;
     font-family: a.$text-font-manrope;
     font-weight: 700;
@@ -46,6 +54,13 @@
     box-shadow: a.$shadow-light;
     border-radius: 0.5rem;
     color: a.$text-color-primary;
+    transition: 200ms ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        background-color: #f2f2f2;
+    }
 }
 
  @-webkit-keyframes shake-horizontal {

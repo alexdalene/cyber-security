@@ -3,9 +3,17 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.6rem;
     padding: 0 1.6rem;
     color: a.$text-color-primary;
+
+    @media (min-width: 768px) {
+        padding: 0 12rem;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 0 40rem;
+    }
 
     .title {
         font-family: a.$text-font-righteous;
