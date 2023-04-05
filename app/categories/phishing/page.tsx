@@ -26,7 +26,7 @@ export default function Home() {
     <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
       <Hero
       title='Phishing'
-      />
+      > </Hero>
       <Section 
       title='What is it?'
       para1='Phishing is one of the most common internet frauds. '

@@ -26,7 +26,7 @@ export default function Home() {
     <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
       <Hero
       title='Internet Scams'
-      />
+      > </Hero>
       <Section 
       title='What are the dangers?'
       para1='Internet scams obtain money or personal information through fraudulent activities on the internet, by exploiting human vulnerabilities.'

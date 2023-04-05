@@ -26,7 +26,7 @@ export default function Home() {
     <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
       <Hero
       title='Privacy Threat'
-      />
+      > </Hero>
       <Section 
       title='Why is it important?'
       para1='We live in a society where our online presence impacts our daily lives.'
