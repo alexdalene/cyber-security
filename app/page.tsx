@@ -26,8 +26,7 @@ export default function Home() {
     <main className={[styles.main, manrope.variable, righteous.variable].join(' ')}>
       <Hero 
       title='WELCOME'
-      />
-      <ToDo />
+      ><Categories /></Hero>
       <Introduction />
       <Divider />
       <Section 
@@ -36,8 +35,6 @@ export default function Home() {
       para2='As technology evolves and the number of internet users rises, the occurrence of cyber threats and crime increases. Our task for this project was to create an informative artifact, and we decided to establish a website.'
       para3='The purpose of this website is to raise awareness and educate the public on how to protect themselves against cyber threats.'
       />
-      <Divider />
-      <Categories />
       <Footer />
     </main>
   )

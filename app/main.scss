@@ -1,6 +1,6 @@
 // colors
 $primary: #3E7CB1;
-$accent: #D5896F;
+$accent: #7295b9;
 $background: #ffffff;
 $text: #fff;
 
@@ -11,8 +11,9 @@ $text-size-medium: 2.4rem;
 $text-size-small: 2rem;
 $text-color-neutral: #ffffff;
 $text-color-primary: #0D1317;
+$text-color-hover: #81a9d0;
 $text-font-righteous: var(--righteous-font);
 $text-font-manrope: var(--manrope-font);
 
 // layout
-$shadow-light: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+$shadow-light: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;

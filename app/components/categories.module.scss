@@ -1,33 +1,33 @@
 @use '../main.scss' as a;
 
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: a.$text-color-primary;
     gap: 2.4rem;
-    padding: 0 1.6rem;
-
-    @media (min-width: 768px) {
-        padding: 0 2.4rem;
-    }
-
-    @media (min-width: 1440px) {
-        padding: 0 35rem;
-    }
-
-    @media (min-width: 1920px) {
-        padding: 0 50rem;
-    }
-
-    @media (min-width: 2560px) {
-        padding: 0 80rem;
-    }
+    margin: 0 auto;
 
     .title {
-        font-family: a.$text-font-righteous;
-        font-size: a.$text-size-title;
+        font-family: a.$text-font-manrope;
+        font-weight: 400;
+        font-size: a.$text-size-medium;
+        text-align: center;
+
+        @media (min-width: 1024px) {
+            font-size: a.$text-size-title;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 2.4rem;
+        flex-direction: column;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+        }
     }
 
     .button {
@@ -37,23 +37,25 @@
         font-size: a.$text-size-small;
         width: 100%;
         background-color: a.$background;
-        height: 4.5rem;
+        height: 6.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0.5rem;
+        text-align: center;
+        border-radius: 5rem;
         box-shadow: a.$shadow-light;
         gap: 1rem;
         font-weight: 700;
         transition: 200ms ease;
 
-        &:hover {
-            transform: translateY(-0.3rem);
-            background-color: #f2f2f2;
+        @media (min-width: 1024px) {
+            width: 20rem;
+            height: 15rem;
         }
 
-        @media (min-width: 768px) {
-            height: 6.5rem;
+        &:hover {
+            background-color: a.$text-color-hover;
+            color: a.$text-color-neutral;
         }
 
         &::after {

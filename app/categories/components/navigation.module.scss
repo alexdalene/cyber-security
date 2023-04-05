@@ -3,22 +3,12 @@
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 0 1.6rem;
+    padding: 0 2.4rem;
+    width: 100%;
 
-    @media (min-width: 768px) {
-        padding: 0 2.4rem;
-    }
-
-    @media (min-width: 1440px) {
-        padding: 0 35rem;
-    }
-
-    @media (min-width: 1920px) {
-        padding: 0 50rem;
-    }
-
-    @media (min-width: 2560px) {
-        padding: 0 80rem;
+    @media (min-width: 840px) {
+        width: 70rem;
+        margin: 0 auto;
     }
 
     .link {

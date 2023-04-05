@@ -4,32 +4,32 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    padding: 0 1.6rem;
     color: a.$text-color-primary;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2.4rem;
 
-    @media (min-width: 768px) {
-        padding: 0 2.4rem;
-    }
-
-    @media (min-width: 1440px) {
-        padding: 0 35rem;
-    }
-
-    @media (min-width: 1920px) {
-        padding: 0 50rem;
-    }
-
-    @media (min-width: 2560px) {
-        padding: 0 80rem;
+    @media (min-width: 840px) {
+        width: 70rem;
+        margin: 0 auto;
     }
 
     .title {
         font-family: a.$text-font-righteous;
+        font-weight: 400;
         font-size: a.$text-size-title;
+
+        @media (min-width: 1024px) {
+            font-size: a.$text-size-display;
+        }
     }
 
     .para {
         font-family: a.$text-font-manrope;
         font-size: a.$text-size-small;
+
+        @media (min-width: 1024px) {
+            font-size: a.$text-size-medium;
+        }
     }
 }

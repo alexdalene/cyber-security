@@ -1,22 +1,29 @@
 @use '../main.scss' as a;
 
 .header {
-    height: clamp(30rem, 35rem, 50rem);
+    height: 100lvh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3E7CB1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #3E7CB1 40px ), repeating-linear-gradient( #D5896F55, #D5896F );
-    background-attachment: fixed;
+    flex-direction: column;
+    padding: 0 2.4rem;
+
+    @media (min-width: 840px) {
+        margin: 0 auto;
+    }
 
     .display {
         font-size: a.$text-size-display;
-        color: a.$text-color-neutral;
+        color: a.$text-color-primary;
         font-family: a.$text-font-righteous;
+        font-weight: 700;
         text-align: center;
+        background: repeating-radial-gradient( circle at 0 0, transparent 0, #3E7CB1 40px ), repeating-linear-gradient( #D5896F55, #D5896F );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-        @media (min-width: 1440px) {
-            font-size: 10.4rem;
+        @media (min-width: 1024px) {
+            font-size: 12rem;
         }
     }
 }

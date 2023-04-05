@@ -6,6 +6,10 @@
     justify-content: center;
     gap: 1rem;
 
+    @media (min-width: 1024px) {
+        display: none;
+    }
+
     .innerCircle {
         background-color: a.$text-color-primary;
         width: 1.8rem;
