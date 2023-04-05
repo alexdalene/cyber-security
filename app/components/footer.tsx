@@ -9,7 +9,7 @@ export default function Footer() {
             <section className={styles.info}>
                 <div className={styles.container}>
                     <h4 className={styles.title}>References</h4>
-                    <Link href='' className={[styles.link, styles.pdf].join(' ')}> <Image width={14} height={14} src='/images/link.svg' alt=''></Image> Click here</Link>
+                    <Link href='/refer.pdf' target='_blank' className={[styles.link, styles.pdf].join(' ')}> <Image width={14} height={14} src='/images/link.svg' alt=''></Image> Click here</Link>
                 </div>
                 <div className={styles.container}>
                     <h4 className={styles.title}>Noroff</h4>
