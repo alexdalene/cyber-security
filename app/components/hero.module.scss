@@ -19,6 +19,7 @@
         font-weight: 700;
         text-align: center;
         background: repeating-radial-gradient( circle at 0 0, transparent 0, #3E7CB1 40px ), repeating-linear-gradient( #D5896F55, #D5896F );
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
