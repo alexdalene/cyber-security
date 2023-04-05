@@ -5,7 +5,10 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <Image width={1000} height={981} src='/images/noroff-logo.png' alt='' className={styles.logo}></Image>
+            <div className={styles.images}>
+                <Image width={1000} height={981} src='/images/noroff-logo.png' alt='logo for noroff school of technology' className={styles.logo}></Image>
+                <Link href='https://tailwind-portfolio-woad.vercel.app/' target='_blank'><Image width={1000} height={981} src='/images/dalene-logo.svg' alt='logo for alex dalene' className={styles.logo}></Image></Link>
+            </div>
             <section className={styles.info}>
                 <div className={styles.container}>
                     <h4 className={styles.title}>References</h4>
@@ -21,7 +24,7 @@ export default function Footer() {
                     <Link href='https://tailwind-portfolio-woad.vercel.app/' target='_blank' className={styles.link}>Alex Dalene</Link>
                 </div>
             </section>
-                <p className={styles.copyright}>&copy; Noroff Kristiansand</p>
+                <p className={styles.copyright}>&copy; Noroff Kristiansand 2023</p>
         </footer>
     )
 }
